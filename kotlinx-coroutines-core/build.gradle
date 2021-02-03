@@ -86,7 +86,7 @@ kotlin {
 
     configure(targets) {
         // Configure additional binaries and test runs -- one for each OS
-        if (["macos", "linux", "mingw"].any { name.startsWith(it) }) {
+        if (["macos", "linuxX64", "mingw"].any { name.startsWith(it) }) {
             binaries {
                 // Test for memory leaks using a special entry point that does not exit but returns from main
                 binaries.getTest("DEBUG").freeCompilerArgs += ["-e", "kotlinx.coroutines.mainNoExit"]
