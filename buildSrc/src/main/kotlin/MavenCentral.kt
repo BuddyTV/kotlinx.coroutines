@@ -12,7 +12,7 @@ import org.gradle.api.publish.maven.MavenPom
 fun MavenPom.configureMavenCentralMetadata(project: Project) {
     name by project.name
     description by "Coroutines support libraries for Kotlin"
-    url by "https://github.com/Kotlin/kotlinx.coroutines"
+    url by "https://github.com/BuddyTV/kotlinx.coroutines"
 
     licenses {
         license {
@@ -32,6 +32,6 @@ fun MavenPom.configureMavenCentralMetadata(project: Project) {
     }
 
     scm {
-        url by "https://github.com/Kotlin/kotlinx.coroutines"
+        url by "https://github.com/BuddyTV/kotlinx.coroutines"
     }
 }
